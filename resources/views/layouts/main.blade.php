@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="/css/styles.css">
     <script src="/js/scripts.js"></script>
 
+    <!-- CSS da Tailwind
+    <script src="https://cdn.tailwindcss.com"></script>
+    -->
+
 </head>
 
     <body>
