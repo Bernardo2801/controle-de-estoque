@@ -20,10 +20,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/', [StockController::class, 'index']);
+Route::get('/', [StockController::class, 'index'])->middleware('auth');
 Route::get('/stocks/create', [StockController::class, 'create'])->middleware('auth');
-Route::get('/stocks/{id}', [StockController::class, 'show']);
-Route::post('/stocks', [StockController::class, 'store']);
+Route::get('/stocks/{id}', [StockController::class, 'show'])->middleware('auth');
+Route::post('/stocks', [StockController::class, 'store'])->middleware('auth');
 Route::delete('/stocks/{id}', [StockController::class, 'destroy'])->middleware('auth');
 Route::get('/stocks/edit/{id}', [StockController::class, 'edit'])->middleware('auth');
 Route::put('/stocks/update/{id}', [StockController::class, 'update'])->middleware('auth');
