@@ -9,6 +9,20 @@ use App\Models\User;
 
 class StockController extends Controller
 {
+
+    public function validity() {
+
+        $search = request('search');
+
+        if ($search) {
+            $stocks = Stock::whereRaw('LOWER(product) LIKE ?', ['%' . strtolower($search) . '%'])->get();
+        } else {
+            $stocks = Stock::all();
+        }
+
+        return view('stocks.validity', ['stocks' => $stocks, 'search' => $search]);
+    }
+
     public function index() {
 
         $search = request('search');
@@ -19,7 +33,7 @@ class StockController extends Controller
             $stocks = Stock::all();
         }
 
-        return view('welcome', ['stocks' => $stocks, 'search' => $search]);
+        return view('stocks.index', ['stocks' => $stocks, 'search' => $search]);
     }
 
 
@@ -77,11 +91,7 @@ class StockController extends Controller
 
     public function dashboard() {
 
-        $user = auth()->user();
-
-        $stocks = $user->stocks;
-
-        return view('/', ['stocks' => $stocks]);
+        return view('welcome');
 
     }
 
@@ -90,8 +100,6 @@ class StockController extends Controller
         $stock = Stock::findOrFail($id);
         $stock->delete();
         return redirect('/');
-        #Stock::findOrFail($id)->delete();
-        #return redirect('/')->with('msg', 'Produto excluído com sucesso!');
     }
 
     public function edit($id) {

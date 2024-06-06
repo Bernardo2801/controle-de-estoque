@@ -34,29 +34,22 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="collapse navbar-collapse" id="navbar">
-                <a href="/" class="navbar-brand">
+                <a href="/index" class="navbar-brand">
                     <img src="/img/logo-techfarma.png" alt="Logo TechFarma">
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="/" class="nav-link">Produtos</a>
+                        <a href="/index" class="nav-link">Produtos</a>
                     </li>
                     <li class="nav-item">
                         <a href="/stocks/create" class="nav-link">Cadastrar Produto</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a href="/validity" class="nav-link">Vencimentos</a>
+                    </li>
                     <li class="nav-item">
                         <a href="/profile" class="nav-link">Usuário</a>
                     </li>
-
-                    @guest
-                        <li class="nav-item">
-                            <a href="/login" class="nav-link">Entrar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/register" class="nav-link">Cadastrar</a>
-                        </li>
-                    @endguest
                 </ul>
             </div>
         </nav>
