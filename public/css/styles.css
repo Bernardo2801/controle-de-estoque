@@ -37,13 +37,16 @@ i {
 
 /* navbar */
 #navbar img {
+    margin-left: 16px;
     width: 100px;
 }
 
 #navbar {
     justify-content: space-between;
     background-color: #050A30;
-    padding: 5px 0;
+    height: 100px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #navbar a {

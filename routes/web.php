@@ -18,16 +18,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::get('/', [StockController::class, 'index'])->middleware('auth');
+    Route::get('/stocks/create', [StockController::class, 'create'])->middleware('auth');
+    Route::get('/stocks/{id}', [StockController::class, 'show'])->middleware('auth');
+    Route::post('/stocks', [StockController::class, 'store'])->middleware('auth');
+    Route::delete('/stocks/{id}', [StockController::class, 'destroy'])->middleware('auth');
+    Route::get('/stocks/edit/{id}', [StockController::class, 'edit'])->middleware('auth');
+    Route::put('/stocks/update/{id}', [StockController::class, 'update'])->middleware('auth');
 });
 
-Route::get('/', [StockController::class, 'index'])->middleware('auth');
-Route::get('/stocks/create', [StockController::class, 'create'])->middleware('auth');
-Route::get('/stocks/{id}', [StockController::class, 'show'])->middleware('auth');
-Route::post('/stocks', [StockController::class, 'store'])->middleware('auth');
-Route::delete('/stocks/{id}', [StockController::class, 'destroy'])->middleware('auth');
-Route::get('/stocks/edit/{id}', [StockController::class, 'edit'])->middleware('auth');
-Route::put('/stocks/update/{id}', [StockController::class, 'update'])->middleware('auth');
-
-
-
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
