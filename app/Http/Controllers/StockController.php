@@ -13,18 +13,15 @@ class StockController extends Controller
 
         $search = request('search');
 
-        if($search) {
-
-            $stocks = Stock::where([
-                ['product', 'like', '%'.$search.'%']
-            ])->get();
-
+        if ($search) {
+            $stocks = Stock::whereRaw('LOWER(product) LIKE ?', ['%' . strtolower($search) . '%'])->get();
         } else {
             $stocks = Stock::all();
         }
 
         return view('welcome', ['stocks' => $stocks, 'search' => $search]);
     }
+
 
     public function create() {
         return view('stocks.create');
@@ -90,9 +87,11 @@ class StockController extends Controller
 
     public function destroy($id) {
 
-        Stock::findOrFail($id)->delete();
-
-        return redirect('/')->with('msg', 'Produto excluído com sucesso!');
+        $stock = Stock::findOrFail($id);
+        $stock->delete();
+        return redirect('/');
+        #Stock::findOrFail($id)->delete();
+        #return redirect('/')->with('msg', 'Produto excluído com sucesso!');
     }
 
     public function edit($id) {

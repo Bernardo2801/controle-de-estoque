@@ -23,6 +23,10 @@
     <link rel="stylesheet" href="/css/styles.css">
     <script src="/js/scripts.js"></script>
 
+    <!-- Alertify -->
+    <script src="/js/alertify.min.js"></script>
+    <link rel="stylesheet" href="/css/alertify.min.css">
+
 </head>
 
 <body>
