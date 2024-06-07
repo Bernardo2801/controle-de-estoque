@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', $stock->product)
+@section('title', 'Produto: ' . $stock->product)
 
 @section ('content')
 

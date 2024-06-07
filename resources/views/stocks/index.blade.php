@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'TechFarma')
+@section('title', 'TechFarma - Index')
 
 @section('content')
 

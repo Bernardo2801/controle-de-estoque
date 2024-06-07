@@ -69,7 +69,7 @@
             </div>
             <div
                 class="w-full py-4 hidden sm:block transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-                <img class="rounded-xl" src="/img/tech-foto.png" alt="Logo Sis Emendas">
+                <img class="rounded-xl" src="/img/tech-foto.png" alt="Foto início">
             </div>
         </div>
     </section>
@@ -127,7 +127,7 @@
                                         evolução de nossos clientes e da sociedade como um todo.</p>
                                 </div>
                                 <div class="w-full py-4 hidden sm:block">
-                                    <img class="rounded-xl" src="/img/tech-foto.png" alt="Logo Sis Emendas">
+                                    <img class="rounded-xl" src="/img/tech-foto.png" alt="Foto história">
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                                         projetos tiveram um impacto positivo na transformação da sociedade.</p>
                                 </div>
                                 <div class="w-full py-4 hidden sm:block">
-                                    <img class="rounded-xl" src="/img/tech-foto.png" alt="Logo Sis Emendas">
+                                    <img class="rounded-xl" src="/img/tech-foto.png" alt="Foto missão">
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                                         mundo.</p>
                                 </div>
                                 <div class="w-full py-4 hidden sm:block">
-                                    <img class="rounded-xl" src="/img/tech-foto.png" alt="Logo Sis Emendas">
+                                    <img class="rounded-xl" src="/img/tech-foto.png" alt="Foto valores">
                                 </div>
                             </div>
                         </div>
@@ -255,7 +255,7 @@
                         class="max-w-sm p-6 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-2xl mb-4 h-full sm:h-max transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                         <a href="{{ route('index') }}" target="_blank">
                             <img src="img/logo-no.png" class="w-40"
-                                title="SIS Emendas">
+                                title="TechFarma">
                             </a>
                     </div>
                 </div>
@@ -294,8 +294,9 @@
                     </div>
                     <div
                         class="max-w-sm p-6 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-2xl mb-4 mr-2 h-full sm:h-max transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-                        <img class="w-24" src="/img/react.png" alt="React" title="React">
+                        <img class="w-24" src="/img/laravel.png" alt="Laravel" title="Laravel">
                     </div>
+                    <!--
                     <div
                         class="max-w-sm p-6 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-2xl mb-4 mr-2 h-full sm:h-max transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                         <img class="w-24" src="/img/vue.png" alt="Vue" title="Vue">
@@ -304,6 +305,7 @@
                         class="max-w-sm p-6 bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-2xl mb-4 mr-2 h-full sm:h-max transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
                         <img class="w-24" src="/img/typescript.png" alt="TypeScript" title="TypeScript">
                     </div>
+                    -->
                 </div>
             </div>
         </div>

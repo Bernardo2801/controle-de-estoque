@@ -39,9 +39,6 @@
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="/index" class="nav-link">Produtos</a>
-                    </li>
-                    <li class="nav-item">
                         <a href="/stocks/create" class="nav-link">Cadastrar Produto</a>
                     </li>
                     <li class="nav-item">

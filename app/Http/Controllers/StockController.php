@@ -14,11 +14,10 @@ class StockController extends Controller
 
         $search = request('search');
 
-        if ($search) {
-            $stocks = Stock::whereRaw('LOWER(product) LIKE ?', ['%' . strtolower($search) . '%'])->get();
-        } else {
-            $stocks = Stock::all();
-        }
+        $stocks = Stock::orderBy('expiration_date', 'asc')->get();
+
+
+
 
         return view('stocks.validity', ['stocks' => $stocks, 'search' => $search]);
     }
@@ -49,7 +48,7 @@ class StockController extends Controller
             'quantity' => 'required',
             'description' => 'required',
             'arrival_date' => 'required|date',
-            'expiration_date' => 'required|date|after:arrival_date',
+            'expiration_date' => 'required|date|after_or_equal:today|after:arrival_date',
         ], [
             'product.required' => 'Por favor, preencha o nome do produto.',
             'value.required' => 'Por favor, preencha o valor.',
@@ -59,6 +58,7 @@ class StockController extends Controller
             'arrival_date.date' => 'Por favor, insira uma data válida para a chegada do produto.',
             'expiration_date.required' => 'Por favor, preencha a data de vencimento.',
             'expiration_date.date' => 'Por favor, insira uma data válida para o vencimento do produto.',
+            'expiration_date.after_or_equal' => 'A data de vencimento deve ser igual ou posterior à data de hoje.',
             'expiration_date.after' => 'A data de vencimento deve ser posterior à data de chegada.',
         ]);
 
@@ -76,7 +76,7 @@ class StockController extends Controller
 
         $stock->save();
 
-        return redirect('/')->with('msg', 'Produto cadastrado com sucesso!');
+        return redirect('/index')->with('msg', 'Produto cadastrado com sucesso!');
 
     }
 
@@ -99,7 +99,7 @@ class StockController extends Controller
 
         $stock = Stock::findOrFail($id);
         $stock->delete();
-        return redirect('/');
+        return redirect('/index')->with('msg', 'Produto deletado com sucesso!');
     }
 
     public function edit($id) {
@@ -124,7 +124,7 @@ class StockController extends Controller
 
         Stock::findOrFail($request->id)->update($request->all());
 
-        return redirect('/')->with('msg', 'Produto editado com sucesso!');
+        return redirect('/index')->with('msg', 'Produto editado com sucesso!');
     }
 
 }

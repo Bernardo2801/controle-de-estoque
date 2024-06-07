@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Adicionar ao Estoque')
+@section('title', 'TechFarma - Adicionar ao Estoque')
 
 @section ('content')
 
