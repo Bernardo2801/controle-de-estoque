@@ -11,6 +11,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+
+});
+
     Route::get('/validity', [StockController::class, 'validity'])->name('validity');
     Route::get('/index', [StockController::class, 'index'])->name('index');
     Route::get('/stocks/create', [StockController::class, 'create'])->name('create');
@@ -19,7 +22,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/stocks/{id}', [StockController::class, 'destroy']);
     Route::get('/stocks/edit/{id}', [StockController::class, 'edit']);
     Route::put('/stocks/update/{id}', [StockController::class, 'update']);
-});
 Route::get('/', [StockController::class, 'dashboard'])->name('welcome');
 
 require __DIR__ . '/auth.php';

@@ -17,8 +17,6 @@ class StockController extends Controller
         $stocks = Stock::orderBy('expiration_date', 'asc')->get();
 
 
-
-
         return view('stocks.validity', ['stocks' => $stocks, 'search' => $search]);
     }
 
@@ -29,7 +27,7 @@ class StockController extends Controller
         if ($search) {
             $stocks = Stock::whereRaw('LOWER(product) LIKE ?', ['%' . strtolower($search) . '%'])->get();
         } else {
-            $stocks = Stock::all();
+            $stocks = Stock::orderBy('product', 'asc')->get();
         }
 
         return view('stocks.index', ['stocks' => $stocks, 'search' => $search]);

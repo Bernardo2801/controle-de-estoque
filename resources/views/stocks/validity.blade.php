@@ -13,7 +13,7 @@
 
 
             <h1>Produtos cadastrados</h1>
-            <p class="subtitle">Veja todos os produtos:</p>
+            <p class="subtitle">Veja todos os produtos em ordem de vencimento:</p>
             <br>
 
         <table class="table">
