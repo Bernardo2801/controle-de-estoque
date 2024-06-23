@@ -69,7 +69,7 @@
             </div>
             <div
                 class="w-full py-4 hidden sm:block transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
-                <img class="rounded-xl" src="/img/tech-foto.png" alt="Foto início">
+                <img class="rounded-xl" src="/img/img1.jpg" alt="Foto início">
             </div>
         </div>
     </section>
@@ -127,7 +127,7 @@
                                         evolução de nossos clientes e da sociedade como um todo.</p>
                                 </div>
                                 <div class="w-full py-4 hidden sm:block">
-                                    <img class="rounded-xl" src="/img/tech-foto.png" alt="Foto história">
+                                    <img class="rounded-xl" src="/img/img2.jpeg" alt="Foto história">
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@
                                         projetos tiveram um impacto positivo na transformação da sociedade.</p>
                                 </div>
                                 <div class="w-full py-4 hidden sm:block">
-                                    <img class="rounded-xl" src="/img/tech-foto.png" alt="Foto missão">
+                                    <img class="rounded-xl" src="/img/img3.jpeg" alt="Foto missão">
                                 </div>
                             </div>
                         </div>
@@ -168,7 +168,7 @@
                                         mundo.</p>
                                 </div>
                                 <div class="w-full py-4 hidden sm:block">
-                                    <img class="rounded-xl" src="/img/tech-foto.png" alt="Foto valores">
+                                    <img class="rounded-xl" src="/img/img4.jpeg" alt="Foto valores">
                                 </div>
                             </div>
                         </div>
