@@ -39,7 +39,6 @@ Siga os passos abaixo para configurar e executar o projeto em seu ambiente local
         <li>PHP &gt;= 7.3</li>
         <li>Composer</li>
         <li>Node.js &gt;= 12.x</li>
-        <li>npm &gt;= 6.x</li>
         <li>MySQL ou outro banco de dados compatível</li>
     </ul>
 
@@ -65,4 +64,4 @@ Siga os passos abaixo para configurar e executar o projeto em seu ambiente local
 `tests/` - Contém os testes automatizados.<br>
 
 # Dúvidas?
-Qualquer dúvida ou sugestão entre em contato comigo!Obrigado pela atenção. :) 
+Qualquer dúvida ou sugestão entre em contato comigo! Obrigado pela atenção. :) 
