@@ -56,13 +56,13 @@ Siga os passos abaixo para configurar e executar o projeto em seu ambiente local
 
 # Estrutura do Projeto
 
-`app/` - Contém os arquivos principais da aplicação.
-`config/` - Contém os arquivos de configuração.
-`database/` - Contém migrações, seeders e factories.
-`public/` - Contém os arquivos públicos, como o index.php e assets.
-`resources/` - Contém as views, arquivos de tradução, etc.
-`routes/` - Contém os arquivos de rotas da aplicação.
-`tests/` - Contém os testes automatizados.
+`app/` - Contém os arquivos principais da aplicação. <br>
+`config/` - Contém os arquivos de configuração. <br>
+`database/` - Contém migrações, seeders e factories. <br>
+`public/` - Contém os arquivos públicos, como o index.php e assets. <br>
+`resources/` - Contém as views, arquivos de tradução, etc. <br>
+`routes/` - Contém os arquivos de rotas da aplicação. <br>
+`tests/` - Contém os testes automatizados.<br>
 
 # Dúvidas?
 Qualquer dúvida ou sugestão entre em contato comigo! :) Obrigado pela atenção.
