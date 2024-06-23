@@ -34,7 +34,6 @@ Permite a remoção de usuários do sistema.
 # Configuração do Projeto
 Siga os passos abaixo para configurar e executar o projeto em seu ambiente local.
 
-
 <h1>Requisitos do Projeto</h1>
     <ul>
         <li>PHP &gt;= 7.3</li>
@@ -43,3 +42,27 @@ Siga os passos abaixo para configurar e executar o projeto em seu ambiente local
         <li>npm &gt;= 6.x</li>
         <li>MySQL ou outro banco de dados compatível</li>
     </ul>
+
+# Instalação
+
+1. Clone o repositório: `https://github.com/Bernardo2801/controle-de-estoque.git`;
+2. Instale as dependências PHP: `composer install`;
+3. Configure o arquivo .env com suas configurações de banco de dados. Para gerar o arquivo .env, execute: `copy .env.example .env`;
+4. Execute as migrações: `php artisan migrate`;
+5. Instale as dependências do projeto listadas no arquivo package.json utilizando o gerenciador de pacotes npm: `npm install`;
+6. Após a instalação, inicie o processo de desenvolvimento: `npm run dev`;
+7. Gere a chave necessária para a execução do sistema: `php artisan key:generate`;
+8. Inicie o servidor de desenvolvimento do Laravel: `php artisan serve`;
+
+# Estrutura do Projeto
+
+`app/` - Contém os arquivos principais da aplicação.
+`config/` - Contém os arquivos de configuração.
+`database/` - Contém migrações, seeders e factories.
+`public/` - Contém os arquivos públicos, como o index.php e assets.
+`resources/` - Contém as views, arquivos de tradução, etc.
+`routes/` - Contém os arquivos de rotas da aplicação.
+`tests/` - Contém os testes automatizados.
+
+# Dúvidas?
+Qualquer dúvida ou sugestão entre em contato comigo! :) Obrigado pela atenção.
